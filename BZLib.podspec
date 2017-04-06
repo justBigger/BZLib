@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BZLib'
-  s.version          = '0.2.0'
+  s.version          = '0.3.0'
   s.summary          = 'description is used to generate tags and improve search results'
 
 # This description is used to generate tags and improve search results.
@@ -28,14 +28,18 @@ Pod::Spec.new do |s|
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'justBigger' => 'dazo@10host.top' }
-  s.source           = { :git => '/Users/tmp/Desktop/CocoaPods/BZLib', :tag => '0.2.0' }
+  s.source           = { :git => 'https://github.com/justBigger/BZLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-  # s.platform = :ios, '6.0'
+  s.frameworks = 'Foundation'
+  # s.ios.deployment_target = '8.0'
+  s.platform = :ios, '7.0'
   s.requires_arc = true
   s.source_files = 'BZLib/Classes/**/*'
-  
+  s.ios.platform = :ios,'7.0'
+  s.ios.preserve_paths = 'ios/BZLib.framework'
+  s.ios.public_header_files = 'ios/BZLib.framework/Versions/A/Headers/*.h'
+  s.ios.vendored_frameworks  = 'ios/BZLib.framework'
 #s.resource_bundles = {
 #   'BZLib' => ['BZLib/Assets/*.png']
 # }
