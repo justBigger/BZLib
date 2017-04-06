@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "Reachability.h"
+#import "BZHttphelper.h"
 
-FOUNDATION_EXPORT double ReachabilityVersionNumber;
-FOUNDATION_EXPORT const unsigned char ReachabilityVersionString[];
+FOUNDATION_EXPORT double BZLibVersionNumber;
+FOUNDATION_EXPORT const unsigned char BZLibVersionString[];
 

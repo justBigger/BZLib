@@ -7,25 +7,12 @@
 //
 
 #import "BZHttphelper.h"
-#import <YSASIHTTPRequest/ASIHTTPRequest.h>
 
 @implementation BZHttphelper
 
 - (void)getWithUrl:(NSString *)url withCompletion:(void (^)(id responseObject))completion failed:(void (^)(NSError *error))failed
 {
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:url]];
-    __weak ASIHTTPRequest *weakrequest = request;
-    [request setCompletionBlock:^{
-         NSString *responseString = [weakrequest responseString];
-         completion(responseString);
-     }];
-
-    [request setFailedBlock:^{
-         NSError *error = [weakrequest error];
-         failed(error);
-     }];
-    
-    [request start];
+    NSLog(@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n", __FILE__, __FUNCTION__, __LINE__);
 }
 
 @end

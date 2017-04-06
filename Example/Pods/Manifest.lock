@@ -1,12 +1,6 @@
 PODS:
-  - BZLib (0.1.0):
-    - YSASIHTTPRequest (~> 2.0.1)
+  - BZLib (0.1.0)
   - Kiwi (2.4.0)
-  - Reachability (3.2)
-  - YSASIHTTPRequest (2.0.1):
-    - YSASIHTTPRequest/Core (= 2.0.1)
-  - YSASIHTTPRequest/Core (2.0.1):
-    - Reachability
 
 DEPENDENCIES:
   - BZLib (from `../`)
@@ -17,10 +11,8 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BZLib: a5436aadf93e22513dd16a4085692ccfe47c798d
+  BZLib: 33a8327f681d64bf0ff9832c2086ed8b4d6d2dd2
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
-  YSASIHTTPRequest: 52fe05fcfb0c903329c3b7c6714fbf683d13f81e
 
 PODFILE CHECKSUM: 047aa7be7740ebf16275a7cc91c106fc70f2ce7b
 

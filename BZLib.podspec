@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'BZLib'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of BZLib.This description is used to generate tags and improve search results'
+  s.summary          = 'description is used to generate tags and improve search results'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -36,12 +36,12 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'BZLib/Classes/**/*'
   
-  s.resource_bundles = {
-    'BZLib' => ['BZLib/Assets/*.png']
-  }
+#s.resource_bundles = {
+#   'BZLib' => ['BZLib/Assets/*.png']
+# }
 
   s.public_header_files = 'BZLib/Classes/*.h'
   s.frameworks = 'MobileCoreServices', 'CFNetwork', 'CoreGraphics'
   s.libraries  = 'z.1'
-  s.dependency 'YSASIHTTPRequest', '~> 2.0.1'
+  #s.dependency 'YSASIHTTPRequest', '~> 2.0.1'
 end
