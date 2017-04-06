@@ -1,0 +1,6 @@
+framework module YSASIHTTPRequest {
+  umbrella header "YSASIHTTPRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
